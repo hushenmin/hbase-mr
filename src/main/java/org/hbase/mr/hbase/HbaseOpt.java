@@ -8,6 +8,8 @@ import org.apache.hadoop.hbase.*;
 import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.io.compress.Compression;
 import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.util.ToolRunner;
+import org.hbase.mr.hbase.bufferedmutator.BufferedMutatorExample;
 
 import java.io.IOException;
 import java.math.BigInteger;
@@ -93,9 +95,9 @@ public class HbaseOpt {
         }
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //createSchemaTables(conf);
-        putData(conf);
+       // putData(conf);
 
     }
 }
